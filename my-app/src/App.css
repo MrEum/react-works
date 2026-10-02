@@ -10,13 +10,13 @@
 }
 .fruit:nth-child(1) {
     width: max-content;
-    background-color: red;
+    background-color: #C7372F;
 }
 .fruit:nth-child(2) {
     width: max-content;
-    background-color: yellow;
+    background-color: #FFDE59;
 }
 .fruit:nth-child(3) {
     width: max-content;
-    background-color: orange;
+    background-color: #FF9F1C;
 }
