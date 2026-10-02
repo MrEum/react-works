@@ -1,0 +1,22 @@
+.welcome {
+    color: #0000ff;
+}
+.item-list{
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fruit:nth-child(1) {
+    width: max-content;
+    background-color: red;
+}
+.fruit:nth-child(2) {
+    width: max-content;
+    background-color: yellow;
+}
+.fruit:nth-child(3) {
+    width: max-content;
+    background-color: orange;
+}
