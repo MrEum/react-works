@@ -1,7 +1,10 @@
 import './App.css'
 import heroImg from './assets/hero.png'
+import Dog from './components/Dog';
+import Dog2 from './components/Dog2';
 import Example01 from './components/Example01';
 import Exameple02 from './components/Example02';
+import Example03 from './components/Example03';
 {/*
   jsx에서는 class 대신 className을 사용해야 한다.
   태그를 병렬로 사용할 수 있다. (div, h2, h3 등)
@@ -31,6 +34,9 @@ function App() {
         <Example01 />
         <br />
         <Exameple02 />
+        <Example03 />
+        <Dog breed="martiz" age={2}/>
+        <Dog2 breed="gyuwon" age={27} />
       </section>
       {/* <MyButton /> */}
     </div>
