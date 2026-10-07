@@ -4,4 +4,70 @@
 .ugly{
   list-style: none;
   padding-left: 0;
+  
 }
+
+.sign-up{
+  width: 500px;
+  margin: 30px auto;
+}
+.sign-up ul{
+  list-style: none;
+  padding-left: 100px;
+}
+.sign-up ul li{
+  margin: 16px;
+  text-align: left;
+}
+.sign-up ul li > label:first-child{
+  float: left;
+  width: 80px;
+  margin-right: 10px;
+}
+.sign-up ul li:last-child{
+  text-align: center;
+}
+.sign-up ul li input[type="text"],
+.sign-up ul li select,
+.sign-up ul li textarea{
+  padding: 5px;
+  width: 200px;
+}
+.sign-up ul li textarea{
+  resize: none;
+}
+.sign-up ul li button{
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.login{
+  width: 500px;
+  margin: 30px auto;
+}
+.login ul{
+  list-style: none;
+  padding-left: 100px;
+}
+.login ul li{
+  margin: 16px;
+  text-align: center;
+}
+
+.login ul li:last-child{
+  text-align: center;
+}
+.login ul li input[type="text"],
+.login ul li input[type="password"]
+{
+  padding: 5px;
+  width: 200px;
+}
+
+.login ul li button{
+  padding: 8px 16px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
