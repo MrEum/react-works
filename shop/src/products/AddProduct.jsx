@@ -43,6 +43,16 @@ const AddProduct = () => {
 
         alert("상품이 등록되었습니다.");
         navigate("/products");  //상품 등록 후 목록 페이지로 이동
+    } //handleSubmit() 닫기
+    
+    const handleCancel = () => {
+        // 입력필드 초기화
+        setFormData({
+            name: "",
+            price: "",
+            description: ""
+
+        })
     }
 
     return(
@@ -84,6 +94,7 @@ const AddProduct = () => {
                 </div>
                 <div>
                     <button type="submit">등록</button>
+                    <button type="button" onClick={handleCancel}> 빠꾸 </button>
                 </div>
             </form>
         </div>
