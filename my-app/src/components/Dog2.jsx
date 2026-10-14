@@ -1,4 +1,6 @@
+//Dog 컴포넌트 정의
 const Dog2 = ({breed, age}) => {
+
     return(
         <div>
             <h2>강아지</h2>
@@ -7,4 +9,5 @@ const Dog2 = ({breed, age}) => {
         </div>
     )
 }
+
 export default Dog2;

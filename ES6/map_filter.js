@@ -2,44 +2,50 @@
 const arr = [1, 2, 3];
 
 // newArr = [2, 4, 6]
-const newArr = arr.map((x) => x * 2);
+//const newArr = arr.map((x) =>{return x * 2});
+const newArr = arr.map(x => x * 2);
 console.log(newArr);
 
 // 객체가 요소인 배열
 const users = [
-    {name: 'Alice', age: 23},
-    {name: 'Bob', age: 30},
-    {name: 'Jerry', age: 25}
-];
+    {name: "Jerry", age: 25},
+    {name: "Linda", age: 30},
+    {name: "Tom", age: 35},
+]
 
-// 첫 번째 요소의 name 출력
-console.log(users[0].name); // Alice
-console.log(users[0].age); // 23
-
+// 이름
+console.log(users[0].name);  //Jerry
+// 나이
+console.log(users[1].age); //30
 
 // 배열에서 이름만 출력
-const names = users.map((user) => user.name); // ['Alice', 'Bob', 'Jerry']
-console.log(names);
+const names = users.map((user) => user.name);
+console.log(names); //[ 'Jerry', 'Linda', 'Tom' ]
 
-// filter() - 배열의 각 요소에 대해 조건을 만족하는 요소만 새로운 배열로 반환
+//filter() - 배열의 각 요소 중 조건이 참인 요소만 모아 
+// 새로운 배열을 반환하는 함수
 
 const nums = [1, 2, 3, 4, 5];
-// 배열에서 짝수만 출력 (nums % 2 == 0)
-const evens = nums.filter((num) => num%2 == 0);
-console.log(evens); // [2, 4]
 
-// users 배열에서 나이가 30 이상인 요소 출력
-const adults = users.filter((user) => user.age >= 30); 
-console.log(adults); // [{name: 'Bob', age: 30}]
+// 배열에서 짝수만 출력 (num % 2 == 0)
+const evens = nums.filter((num) => num % 2 == 0);
+console.log(evens); //[ 2, 4 ]
 
-// users에서 나이가 30 이상인 사람의 이름만 출력 - filter(),map()를 함께 사용
-const adultNames = users.filter((user) => user.age >= 30).map((user) => user.name);
+// users에서 나이가 30 이상인 회원 출력
+const adults = users.filter((user) => user.age >= 30);
+console.log(adults); //[ { name: 'Linda', age: 30 }, { name: 'Tom', age: 35 } ]
 
-console.log(adultNames); // ['Bob']
+// users에서 나이가 30 이상인 회원의 이름 출력 - filter. map 사용
+const adultNames = users.filter((user) => user.age >= 30)
+                        .map((user) => user.name)
+console.log(adultNames);  //[ 'Linda', 'Tom' ]
 
-//forEach() - 배열의 각 요소에 대해 반복 수행
-const userNames = []; 
-users.forEach((user) => {
-    userNames.push(user.name); // 요소추가
-});
-console.log(userNames); // ['Alice', 'Bob', 'Jerry']   
+// forEach()
+const userNames = [];  //빈 배열
+users.forEach(user => {
+    userNames.push(user.name);  //요소 추가
+})
+
+console.log(userNames);  //[ 'Jerry', 'Linda', 'Tom' ]
+
+ 

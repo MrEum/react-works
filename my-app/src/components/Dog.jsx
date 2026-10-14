@@ -1,4 +1,6 @@
+//Dog 컴포넌트 정의
 const Dog = (props) => {
+
     return(
         <div>
             <h2>강아지</h2>
@@ -7,4 +9,5 @@ const Dog = (props) => {
         </div>
     )
 }
+
 export default Dog;

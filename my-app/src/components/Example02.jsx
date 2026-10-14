@@ -1,18 +1,19 @@
-// 리스트 렌더링 list rendering
+// 리스트(배열) 렌더링
 
-const Exameple02 = () => {
-    const items = ['apple', 'banana', 'orange'];
+const Example02 = () => {
+    const items = ["사과", "바나나", "딸기"];
 
-    return (
+    return(
         <div>
-            <h2>List Rendering</h2>
-            <ul className="item-list">
+            <h2>리스트 렌더링</h2>
+            <ul className="list">
                 {items.map((item, index) => (
-                    <li key={index} className="fruit">{item}</li>
+                    // key 속성 반드시 입력
+                   <li key={index}>{item}</li> 
                 ))}
             </ul>
         </div>
     )
 }
 
-export default Exameple02;
+export default Example02;

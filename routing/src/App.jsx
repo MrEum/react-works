@@ -1,28 +1,33 @@
-
-import Main from './pages/Main'
 import './App.css'
-import {BrowserRouter, Link, Route, Routes} from "react-router-dom"
+import {
+  BrowserRouter, 
+  Link, 
+  Routes,
+  Route
+} from "react-router-dom"
+import Main from './pages/Main'
 import SignUp from './pages/SignUp'
-import Login from './pages/Login'
-import Header from './layouts/header'
-import Information from './pages/Information'
+import SignIn from './pages/SiginIn'
+import Header from './layouts/Header'
+import Board from './pages/Board'
+import BoardDetail from './pages/BoardDetail'
 
 function App() {
 
   return (
     <>
-      <section className='app'>
+      <section className="app">
         <BrowserRouter>
-          <Header/>
-
+          <Header />
           <div className='content'>
             <Routes>
-              <Route path='/' element={<Main/>}/>
-              <Route path='/sign_up' element={<SignUp/>}/>
-              <Route path='/login' element={<Login/>}/>
-              <Route path='/Information' element={<Information/>}/>
+              <Route path="/" element={<Main />} />
+              <Route path="/signup" element={<SignUp />} />
+              <Route path='/signin' element={<SignIn />} />
+              <Route path='/board' element={<Board />} />
+              {/* :id - 경로 변수 */}
+              <Route path='/board/:id' element={<BoardDetail />} />
             </Routes>
-
           </div>
         </BrowserRouter>
       </section>

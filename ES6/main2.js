@@ -1,5 +1,4 @@
+import { add, myAbs } from "./lib/module_ex.js"
 
-import { add, myAbs } from "./lib/module_ex.js";    
-
-console.log(add(4, 5)); // Output: 9
-console.log(myAbs(-10)); // Output: 10
+console.log(add(4, 5));  //9
+console.log(myAbs(-10)); //10

@@ -1,5 +1,6 @@
-// common.js에서 함수 불러오기
-let { add, myAbs } = require("./lib/commin.js");
+//common.js에서 함수 불러오기
+let { add, myAbs } = require("./lib/common.js")
 
-console.log(add(4, 5)); // Output: 9
-console.log(myAbs(-10)); // Output: 10
+console.log(add(4, 5));  //9
+console.log(myAbs(-10)); //10
+
